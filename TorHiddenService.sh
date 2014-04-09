@@ -20,7 +20,6 @@ mv /etc/tor/torrc /etc/tor/torrc.ORIG
 echo "Configuring Hidden Service."
 
 cat > /etc/tor/torrc << __TORRC__
-
 Log notice syslog
 
 DataDirectory /var/lib/tor
@@ -29,7 +28,6 @@ HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 22 127.0.0.1:22
 HiddenServicePort 5222 127.0.0.1:5222
 HiddenServicePort 5269 127.0.0.1:5269
-
 __TORRC__
 
 echo "Checking Tor status."
