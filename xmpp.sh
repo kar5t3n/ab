@@ -35,7 +35,7 @@ systemctl enable tor
 
 echo "Starting Tor"
 
-systemctl start tor
+systemctl restart tor
 
 echo "Checking Tor status"
 
@@ -47,7 +47,9 @@ pacman -S prosody lua51-sec
 
 echo "Generating encryption keys"
 
-prosodyctl cert generate $(cat /var/lib/tor/hidden_service/hostname)
+echo "Simply hit 'ENTER' to accept the defaults"
+
+nerate $(cat /var/lib/tor/hidden_service/hostname)
 
 cp /var/lib/prosody/*.key /etc/prosody/certs/
 
@@ -253,11 +255,12 @@ systemctl enable prosody
 
 echo "Starting Prosody"
 
-systemctl start prosody
+systemctl restart prosody
 
 echo "Checking Prosody status"
 
 systemctl status prosody
 
-echo "Congratulations! To view your hostname, run:"
-echo "./host.sh "
+echo "Congratulations!"
+
+./host.sh
