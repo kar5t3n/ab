@@ -14,7 +14,7 @@ echo "Installing Tor"
 
 pacman -S tor
 
-echo "Backing up torrc"
+echo "Backing up original torrc"
 
 mv /etc/tor/torrc /etc/tor/torrc.ORIG
 
@@ -40,6 +40,36 @@ systemctl start tor
 echo "Checking Tor status"
 
 systemctl status tor
+
+pacman -S prosody lua51-sec
+
+echo "Generating encryption keys"
+
+prosodyctl cert generate $(cat /var/lib/tor/hidden_service/hostname)
+
+cp /var/lib/prosody/*.key /etc/prosody/certs/
+
+cp /var/lib/prosody/*.crt /etc/prosody/certs/
+
+echo "Backing up original configuration"
+
+mv /etc/prosody/prosody.cfg.lua /etc/prosody/prosody.cfg.lua.ORIG
+
+cat > /etc/prosody/prosody.cfg.lua << __PROSODY__
+#config here
+__PROSODY__
+
+echo "Enabling Prosody to be started on bootup"
+
+systemctl enable prosody
+
+echo "Starting Prosody"
+
+systemctl start prosody
+
+echo "Checking Prosody status"
+
+systemctl status prosody
 
 echo "Congratulations! To view your hostname, run:"
 echo "./host.sh "
