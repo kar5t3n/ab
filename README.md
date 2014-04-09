@@ -9,6 +9,12 @@ Download the zip file containing the dd image
 
 <pre><code>wget http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.zip.md5</code></pre>
 
+Write this image to the target SD card. The SD card will need to be 4GB or larger.
+
+Replacing sdX with the location of the SD card, run:
+
+<pre><code>dd bs=1M if=<i>/path/to/</i>ArchLinuxARM*.img of=/dev/sd<i>X</i></code></pre>
+
 Eject the card from your computer, insert into the Raspberry Pi, and power it on.
 
 The default username is 'root' with a password 'root'
