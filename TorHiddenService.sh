@@ -28,10 +28,6 @@ HiddenServicePort 5222 127.0.0.1:5222
 HiddenServicePort 5269 127.0.0.1:5269
 __TORRC__
 
-echo "Checking Tor status"
-
-systemctl status tor
-
 echo "Enabling Tor to be started on bootup"
 
 systemctl enable tor
@@ -44,24 +40,10 @@ echo "Checking Tor status"
 
 systemctl status tor
 
-echo "Starting Tor."
-
-systemctl restart tor
-
-echo "Retreivinig Hidden Service Address"
-
-echo "!!!!! IMPORTANT !!!!!!"
-
-echo "**********************"
-
-cat /var/lib/tor/hidden_service/hostname
-
-echo "**********************"
-
-echo "!!!!! IMPORTANT !!!!!!"
-
-echo "Record Hidden Service Address"
-
-echo " "
-
-echo "Please record the Tor hidden service address above"
+echo "Retrieving Tor hidden service address"
+echo "!!!!! IMPORTANT !!!!!"
+echo "Your Tor hidden service is:"
+echo "$(cat /var/lib/tor/hidden_service/hostname)"
+echo "Please record your Tor hidden service address"
+echo "!!!!! IMPORTANT !!!!!"
+echo "To view you Tor hidden service address run: cat /var/lib/tor/hidden_service/hostname"
