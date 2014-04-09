@@ -37,9 +37,9 @@ echo "Starting Tor"
 
 systemctl restart tor
 
-echo "Just a moment"
+echo "One moment please"
 
-sleep 30
+sleep 60
 
 echo "Checking Tor status"
 
@@ -53,11 +53,13 @@ echo "Generating encryption keys"
 
 echo "Simply hit 'ENTER' to accept the defaults"
 
-prosodyctl cert generate $(cat /var/lib/tor/hidden_service/hostname)
-
-echo "Another moment please"
+echo "In a moment ;)"
 
 sleep 30
+
+echo "Here we go :)"
+
+prosodyctl cert generate $(cat /var/lib/tor/hidden_service/hostname)
 
 cp /var/lib/prosody/*.key /etc/prosody/certs/
 
