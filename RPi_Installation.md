@@ -64,6 +64,8 @@ Install and configure the hidden service
 
 <pre><code>./tor.sh</code></pre>
 
+NOTE: Make a secure record of the Hostname and Admin Account
+
 ==
 For more detailed information, visit:
 
