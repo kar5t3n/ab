@@ -71,5 +71,3 @@ http://torproject.org
 http://prosody.im
 
 <pre><code></code></pre>
-
-
