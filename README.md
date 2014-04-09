@@ -1,7 +1,9 @@
 ab
 ==
-
+Update Arch Linux system
 <pre><code>pacman -Syu</code></pre>
+Install Unzip
+<pre><code>pacman -S unzip</code></pre>
 
 <p>Using <code>wget</code> command</p>
 
