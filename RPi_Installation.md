@@ -1,6 +1,6 @@
 Raspberry Pi Installation
 ==
-<b>Install Arch Linux Arm on the SD card</b>
+<b>Install Arch Linux ARM on the SD card</b>
 
 Download the zip file containing the dd image
 
