@@ -58,7 +58,7 @@ Reboot the system
 <pre><code>reboot</code></pre>
 
 ==
-For more detailed information, visit:
+For more information, visit:
 
 http://archlinuxarm.org
 
