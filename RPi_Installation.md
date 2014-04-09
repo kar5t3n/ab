@@ -31,19 +31,6 @@ Update the system and install "unzip"
 
 <pre><code>pacman -Syu unzip</code></pre>
 
-Change the password
-
-<pre><code>passwd</code></pre>
-
-Reboot
-
-<pre><code>reboot</code></pre>
-
-==
-<b>Install the Hidden Service</b>
-
-Login with the default username 'root' and the new password
-
 Download the "master.zip"
 
 <pre><code>wget https://github.com/kar5t3n/ab/archive/master.zip</code></pre>
@@ -62,7 +49,7 @@ Change permissions
 
 Install and configure the hidden service
 
-<pre><code>./tor.sh</code></pre>
+<pre><code>./xmpp.sh</code></pre>
 
 NOTE: Make a secure record of the Hostname and Admin Account
 
