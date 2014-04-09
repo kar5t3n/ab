@@ -8,7 +8,8 @@ The default username is 'root' with a password 'root'
 
 ==
 Configure the keyboard
-<pre><codeloadkeys uk</code></pre>
+<pre><code>loadkeys <i>uk</i></code></pre>
+<pre><code</code></pre>
 Update the system
 <pre><code>pacman -Syu</code></pre>
 Install "unzip"
