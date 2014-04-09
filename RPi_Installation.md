@@ -64,10 +64,6 @@ Install and configure the hidden service
 
 <pre><code>./tor.sh</code></pre>
 
-View the your hostname
-
-<pre><code>./host.sh</code></pre>
-
 ==
 For more detailed information, visit:
 
