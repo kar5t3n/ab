@@ -41,4 +41,4 @@ echo "Checking Tor status"
 systemctl status tor
 
 echo "Congratulations! To view your hostname, run:"
-echo "./hostname.sh "
+echo "./host.sh "
