@@ -27,13 +27,9 @@ Configure the keyboard
 
 <pre><code>loadkeys <i>uk</i></code></pre>
 
-Update the system
+Update the system and install "unzip"
 
-<pre><code>pacman -Syu</code></pre>
-
-Install "unzip"
-
-<pre><code>pacman -S unzip</code></pre>
+<pre><code>pacman -Syu unzip</code></pre>
 
 Change the password
 
