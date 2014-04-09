@@ -49,24 +49,6 @@ echo "Installing Prosody"
 
 pacman -S prosody lua51-sec
 
-echo "Generating encryption keys"
-
-echo "Simply hit 'ENTER' to accept the defaults"
-
-echo "In a moment ;)"
-
-sleep 30
-
-echo "Here we go :)"
-
-prosodyctl cert generate $(cat /var/lib/tor/hidden_service/hostname)
-
-cp /var/lib/prosody/*.key /etc/prosody/certs/
-
-cp /var/lib/prosody/*.crt /etc/prosody/certs/
-
-chmod 744 /etc/prosody/certs/*.*
-
 echo "Backing up original"
 
 mv /etc/prosody/prosody.cfg.lua /etc/prosody/prosody.cfg.lua.ORIG
@@ -258,6 +240,20 @@ VirtualHost "$(cat /var/lib/tor/hidden_service/hostname)"
 --Component "gateway.$(cat /var/lib/tor/hidden_service/hostname)"
 --	component_secret = "password"
 __PROSODY__
+
+echo "Generating encryption keys"
+
+echo "Simply hit 'ENTER' to accept the defaults"
+
+sleep 10
+
+prosodyctl cert generate $(cat /var/lib/tor/hidden_service/hostname)
+
+cp /var/lib/prosody/*.key /etc/prosody/certs/
+
+cp /var/lib/prosody/*.crt /etc/prosody/certs/
+
+chmod 744 /etc/prosody/certs/*.*
 
 echo "Enabling Prosody to be started on bootup"
 
