@@ -48,18 +48,14 @@ systemctl status tor
 
 echo "Retreivinig Hidden Service Address."
 
-echo "THIS IS IMPORTANT!"
+echo "!!! THIS IS IMPORTANT !!!"
+
+echo "**********************"
 
 cat /var/lib/tor/hidden_service/hostname
 
+echo "**********************"
+
+echo "!!! THIS IS IMPORTANT !!!"
+
 echo "Please record this (dot) onion address."
-
-echo "Please change your password."
-
-passwd
-
-echo "Thank you."
-
-echo "Rebooting."
-
-reboot
