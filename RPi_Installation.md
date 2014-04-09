@@ -53,7 +53,7 @@ Install and configure the hidden service
 
 NOTE: Make a secure record of the Hostname and Admin Account
 
-Reboot the system
+Restart the system
 
 <pre><code>reboot</code></pre>
 
