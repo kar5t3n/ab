@@ -70,17 +70,18 @@ Install and configure Tor Hidden Service
 
 <pre><code>./TorHiddenService.sh</code></pre>
 
-Record the Hidden Service Address
+Watch for <i>Retreivinig Hidden Service Address</i>
 
-<pre><code>
-Retreivinig Hidden Service Address.
-!!! THIS IS IMPORTANT !!!
+<pre><code>Retreivinig Hidden Service Address.
+!!!!!! IMPORTANT !!!!!
 **********************
-<i>.onion</i>
+<i>16characteraddss.onion</i>
 **********************
-!!! THIS IS IMPORTANT !!!
-Please record Hidden Service Address.
+!!!!! IMPORTANT !!!!!!
+Record the Hidden Service Address.
 </code></pre>
+
+Record the Hidden Service Address
 
 ==
 <b>Retreivinig Hidden Service Address</b>
