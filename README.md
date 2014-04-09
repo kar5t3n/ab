@@ -9,7 +9,7 @@ https://tails.boum.org/
 
 <b>Raspberry Pi Installation</b> (link)
 
-Arch Linux Arm
+Arch Linux ARM
 
 Tor Hidden Service
 
