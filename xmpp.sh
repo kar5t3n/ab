@@ -41,6 +41,8 @@ echo "Checking Tor status"
 
 systemctl status tor
 
+echo "Installing Prosody"
+
 pacman -S prosody lua51-sec
 
 echo "Generating encryption keys"
