@@ -59,7 +59,7 @@ Restart the system
 
 <pre><code>reboot</code></pre>
 
-The monitor and keyboard can be removed at this stage
+The monitor and keyboard can be removed
 
 You do not need to login for the hidden service to activate
 
