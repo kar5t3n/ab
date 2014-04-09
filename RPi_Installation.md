@@ -60,20 +60,13 @@ Change permissions
 
 <pre><code>chmod 744 *.*</code></pre>
 
-Install and configure Tor Hidden Service
+Install and configure the hidden service
 
 <pre><code>./tor.sh</code></pre>
 
-View the Hidden Service hostname
+View the your hostname
 
 <pre><code>./host.sh</code></pre>
-
-==
-<b>Retreive Hidden Service Address</b>
-
-Login with the default username 'root' and the new password
-
-<pre><code>cd cat /var/lib/tor/hidden_service/hostname</code></pre>
 
 ==
 For more detailed information, visit:
