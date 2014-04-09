@@ -1,6 +1,6 @@
 Raspberry Pi Installation
 ==
-<b>Installing Arch Linux Arm on the Raspberry Pi SD card</b>
+<b>Install Arch Linux Arm on the SD card</b>
 
 Download the zip file containing the dd image
 
@@ -17,8 +17,6 @@ Replacing sdX with the location of the SD card, run:
 <pre><code>dd bs=1M if=<i>/path/to/</i>ArchLinuxARM*.img of=/dev/sd<i>X</i></code></pre>
 
 Eject the card from your computer, insert into the Raspberry Pi, and power it on.
-
-The default username is 'root' with a password 'root'
 
 ==
 <b>Configure the system</b>
@@ -70,21 +68,21 @@ Install and configure Tor Hidden Service
 
 <pre><code>./TorHiddenService.sh</code></pre>
 
-Watch for <i>Retreivinig Hidden Service Address</i>
+Watch for <i>"Retreivinig Hidden Service Address"</i>
 
 <pre><code>Retreivinig Hidden Service Address.
 !!!!!! IMPORTANT !!!!!
 **********************
 <i>16characteraddss.onion</i>
 **********************
-!!!!! IMPORTANT !!!!!!
+!!!!!! IMPORTANT !!!!!
 Record the Hidden Service Address.
 </code></pre>
 
-Please record the Tor hidden service address
+Please record the <i>16characteraddss.onion</i> address
 
 ==
-<b>Retreivinig Hidden Service Address</b>
+<b>Retreive Hidden Service Address</b>
 
 Login with the default username 'root' and the new password
 
