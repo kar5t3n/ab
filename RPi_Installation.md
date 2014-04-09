@@ -77,6 +77,8 @@ http://www.raspberrypi.org
 
 http://torproject.org
 
+http://prosody.im
+
 <pre><code></code></pre>
 
 
