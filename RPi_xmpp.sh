@@ -273,4 +273,6 @@ cat > ~/.bashrc << __BASHRC__
 alias host='~/ab-master/RPi_host.sh'
 __BASHRC__
 
+host
+
 echo "Congratulations! When you're ready, restart the system by running 'reboot'"
