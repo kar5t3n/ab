@@ -51,6 +51,8 @@ Install and configure the hidden service
 
 <pre><code>./xmpp.sh</code></pre>
 
+Follow the prompts until you are asked to change your password
+
 NOTE: Make a secure record of the Hostname and Admin Account
 
 Restart the system
