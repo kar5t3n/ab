@@ -2,10 +2,6 @@ Raspberry Pi Installation
 ==
 <b>Installing Arch Linux Arm on the Raspberry Pi SD card</b>
 
-http://archlinuxarm.org/platforms/armv6/raspberry-pi
-
-http://www.raspberrypi.org/documentation/installation
-
 Download the zip file containing the dd image
 
 <pre><code>wget http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.zip</code></pre>
@@ -27,7 +23,7 @@ The default username is 'root' with a password 'root'
 For more detailed information, visit http://archlinuxarm.org/platforms/armv6/raspberry-pi and http://www.raspberrypi.org/documentation/installation
 
 ==
-<b></b>
+<b>Configure the system</b>
 
 Configure the keyboard
 
@@ -50,6 +46,49 @@ Reboot
 <pre><code>reboot</code></pre>
 
 ==
+<b>Install the Tor Hidden Service</b>
+
+Login as 'root' with the new password
+
 Download the "master.zip"
 
 <pre><code>wget https://github.com/kar5t3n/ab/archive/master.zip</code></pre>
+
+Unzip the archive
+
+<pre><code>unzip master.zip</code></pre>
+
+Change to the ab-master directory
+
+<pre><code>cd ab-master/</code></pre>
+
+Change permissions
+
+<pre><code>chmod 744 *.*</code></pre>
+
+Install and configure Tor Hidden Service
+
+<pre><code>./TorHiddenService.sh</code></pre>
+
+Record the Hidden Service Address
+
+<pre><code>
+Retreivinig Hidden Service Address.
+!!! THIS IS IMPORTANT !!!
+**********************
+<i>.onion</i>
+**********************
+!!! THIS IS IMPORTANT !!!
+Please record Hidden Service Address.
+</code></pre>
+
+==
+<b>Retreivinig Hidden Service Address</b>
+
+Login as 'root' with the new password and run
+
+<pre><code>cat /var/lib/tor/hidden_service/hostname</code></pre>
+
+<pre><code></code></pre>
+
+
