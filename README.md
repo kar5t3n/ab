@@ -1,13 +1,13 @@
 ab
 ==
-
 <b>Assumptions</b>
 
-https://torproject.org/
+TBB https://torproject.org/
 
-https://tails.boum.org/
+Tails https://tails.boum.org/
 
-<b>Raspberry Pi Installation</b> (link)
+==
+<b>Raspberry Pi Installation</b>
 
 Arch Linux ARM
 
@@ -15,6 +15,11 @@ Tor Hidden Service
 
 Prosody XMPP Server
 
-<b>PC Installation</b> (link)
+==
+<b>PC Installation</b>
 
 Debian
+
+Tor Hidden Service
+
+Prosody XMPP Server
