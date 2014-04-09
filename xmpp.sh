@@ -271,6 +271,10 @@ echo "Checking Prosody status"
 
 systemctl status prosody
 
+echo "Almost done :P"
+
+passwd
+
 echo "Congratulations!"
 
 ./host.sh
