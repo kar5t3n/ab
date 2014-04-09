@@ -19,7 +19,7 @@ Replacing sdX with the location of the SD card, run:
 Eject the card from your computer, insert into the Raspberry Pi, and power it on.
 
 ==
-<b>Configure the system</b>
+<b>Configure the Raspberry Pi</b>
 
 Login with the default username 'root' and password 'root'
 
@@ -40,7 +40,7 @@ Reboot
 <pre><code>reboot</code></pre>
 
 ==
-<b>Install the Tor Hidden Service</b>
+<b>Install the Hidden Service</b>
 
 Login with the default username 'root' and the new password
 
@@ -62,27 +62,18 @@ Change permissions
 
 Install and configure Tor Hidden Service
 
-<pre><code>./TorHiddenService.sh</code></pre>
+<pre><code>./tor.sh</code></pre>
 
-Watch for <i>"Retreivinig Hidden Service Address"</i>
+View the Hidden Service hostname
 
-<pre><code>Retreivinig Hidden Service Address.
-!!!!!! IMPORTANT !!!!!
-**********************
-<i>16characteraddss.onion</i>
-**********************
-!!!!!! IMPORTANT !!!!!
-Record the Hidden Service Address.
-</code></pre>
-
-Please record the <i>16characteraddss.onion</i> address
+<pre><code>./host.sh</code></pre>
 
 ==
 <b>Retreive Hidden Service Address</b>
 
 Login with the default username 'root' and the new password
 
-<pre><code>cat /var/lib/tor/hidden_service/hostname</code></pre>
+<pre><code>cd cat /var/lib/tor/hidden_service/hostname</code></pre>
 
 ==
 For more detailed information, visit:
