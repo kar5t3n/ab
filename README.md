@@ -1,10 +1,12 @@
 ab
 ==
-Update Arch Linux system
+Change the password
+<pre><code>passwd</code></pre>
+Update the system
 <pre><code>pacman -Syu</code></pre>
-Install Unzip
+Install "unzip"
 <pre><code>pacman -S unzip</code></pre>
-
-<p>Using <code>wget</code> command</p>
-
+Reboot
+<pre><code>reboot</code></pre>
+Download the "master.zip"
 <pre><code>wget https://github.com/kar5t3n/ab/archive/master.zip</code></pre>
