@@ -9,12 +9,6 @@ echo "Checking the network connection."
 
 ping -c 3 torproject.org
 
-echo "Upgrading the system."
-
-echo "This could take a while."
-
-pacman -Syu
-
 echo "Installing Tor."
 
 pacman -S tor
