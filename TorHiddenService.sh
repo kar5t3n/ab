@@ -32,7 +32,7 @@ echo "Enabling Tor to be started on bootup"
 
 systemctl enable tor
 
-echo "Starting Tor."
+echo "Starting Tor"
 
 systemctl start tor
 
