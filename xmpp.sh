@@ -243,9 +243,9 @@ __PROSODY__
 
 echo "Generating encryption keys"
 
-echo "Simply hit 'ENTER' to accept the defaults"
-
 sleep 10
+
+echo "Simply hit 'ENTER' to accept the defaults"
 
 prosodyctl cert generate $(cat /var/lib/tor/hidden_service/hostname)
 
@@ -266,8 +266,6 @@ systemctl restart prosody
 echo "Checking Prosody status"
 
 systemctl status prosody
-
-echo "Almost done :P"
 
 passwd
 
