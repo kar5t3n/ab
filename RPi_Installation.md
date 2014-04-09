@@ -24,6 +24,8 @@ Eject the card from your computer, insert into the Raspberry Pi, and power it on
 
 The default username is 'root' with a password 'root'
 
+For more detailed information, visit http://archlinuxarm.org/platforms/armv6/raspberry-pi and http://www.raspberrypi.org/documentation/installation
+
 ==
 <b></b>
 
