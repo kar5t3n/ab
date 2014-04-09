@@ -1,5 +1,6 @@
 ab
 ==
+Raspberry Pi Installation
 
 http://archlinuxarm.org/platforms/armv6/raspberry-pi
 
@@ -7,7 +8,9 @@ Download the zip file containing the dd image
 
 <pre><code>wget http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.zip</code></pre>
 
-<pre><code>wget http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.zip.md5</code></pre>
+Unzip the file
+
+<pre><code>unzip ArchLinuxARM-rpi-latest.zip</code></pre>
 
 Write this image to the target SD card. The SD card will need to be 4GB or larger.
 
@@ -18,7 +21,6 @@ Replacing sdX with the location of the SD card, run:
 Eject the card from your computer, insert into the Raspberry Pi, and power it on.
 
 The default username is 'root' with a password 'root'
-
 ==
 Configure the keyboard
 
@@ -39,7 +41,6 @@ Change the password
 Reboot
 
 <pre><code>reboot</code></pre>
-
 ==
 Download the "master.zip"
 
