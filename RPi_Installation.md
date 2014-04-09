@@ -60,6 +60,13 @@ Restart the system
 <pre><code>reboot</code></pre>
 
 ==
+<b>To view the Hostname and Admin Account</b>
+
+Login with the default username 'root' and new password
+
+<pre><code>host</code></pre>
+
+==
 For more information, visit:
 
 http://archlinuxarm.org
