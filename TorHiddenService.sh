@@ -40,4 +40,5 @@ echo "Checking Tor status"
 
 systemctl status tor
 
-echo "Congratulations! Your Tor hidden service is active. Run ./hostname.sh to view your Tor hidden service hostname"
+echo "Congratulations! To view your hostname, run:"
+echo "./hostname.sh "
