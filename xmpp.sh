@@ -49,7 +49,7 @@ echo "Generating encryption keys"
 
 echo "Simply hit 'ENTER' to accept the defaults"
 
-nerate $(cat /var/lib/tor/hidden_service/hostname)
+prosodyctl cert generate $(cat /var/lib/tor/hidden_service/hostname)
 
 cp /var/lib/prosody/*.key /etc/prosody/certs/
 
