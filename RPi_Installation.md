@@ -81,7 +81,7 @@ Watch for <i>Retreivinig Hidden Service Address</i>
 Record the Hidden Service Address.
 </code></pre>
 
-Record the Hidden Service Address
+Please record the Tor hidden service address
 
 ==
 <b>Retreivinig Hidden Service Address</b>
