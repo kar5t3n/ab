@@ -20,10 +20,10 @@ Eject the card from your computer, insert into the Raspberry Pi, and power it on
 
 The default username is 'root' with a password 'root'
 
-For more detailed information, visit http://archlinuxarm.org/platforms/armv6/raspberry-pi and http://www.raspberrypi.org/documentation/installation
-
 ==
 <b>Configure the system</b>
+
+Login with the default username 'root' and password 'root'
 
 Configure the keyboard
 
@@ -48,7 +48,7 @@ Reboot
 ==
 <b>Install the Tor Hidden Service</b>
 
-Login as 'root' with the new password
+Login with the default username 'root' and the new password
 
 Download the "master.zip"
 
@@ -86,9 +86,18 @@ Please record the Tor hidden service address
 ==
 <b>Retreivinig Hidden Service Address</b>
 
-Login as 'root' with the new password and run
+Login with the default username 'root' and the new password
 
 <pre><code>cat /var/lib/tor/hidden_service/hostname</code></pre>
+
+==
+For more detailed information, visit:
+
+http://archlinuxarm.org
+
+http://www.raspberrypi.org
+
+http://torproject.org
 
 <pre><code></code></pre>
 
