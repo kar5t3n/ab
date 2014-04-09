@@ -1,6 +1,6 @@
 ab
 ==
-Raspberry Pi Installation
+<b>Raspberry Pi Installation</b>
 
 http://archlinuxarm.org/platforms/armv6/raspberry-pi
 
@@ -21,6 +21,7 @@ Replacing sdX with the location of the SD card, run:
 Eject the card from your computer, insert into the Raspberry Pi, and power it on.
 
 The default username is 'root' with a password 'root'
+
 ==
 Configure the keyboard
 
@@ -41,6 +42,7 @@ Change the password
 Reboot
 
 <pre><code>reboot</code></pre>
+
 ==
 Download the "master.zip"
 
