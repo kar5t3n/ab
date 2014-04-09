@@ -58,7 +58,7 @@ Change to the ab-master directory
 
 Change permissions
 
-<pre><code>chmod 744 *.*</code></pre>
+<pre><code>chmod 744 *.sh</code></pre>
 
 Install and configure the hidden service
 
