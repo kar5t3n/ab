@@ -5,36 +5,34 @@
 # for SSH (Port 22) and
 # XMPP (Ports 5222 & 5269)
 
-echo "Checking the network connection."
+echo "Checking the network connection"
 
 ping -c 3 torproject.org
 
-echo "Installing Tor."
+echo "Installing Tor"
 
 pacman -S tor
 
-echo "Backing up torrc."
+echo "Backing up torrc"
 
 mv /etc/tor/torrc /etc/tor/torrc.ORIG
 
-echo "Configuring Hidden Service."
+echo "Configuring Hidden Service"
 
 cat > /etc/tor/torrc << __TORRC__
 Log notice syslog
-
 DataDirectory /var/lib/tor
-
 HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 22 127.0.0.1:22
 HiddenServicePort 5222 127.0.0.1:5222
 HiddenServicePort 5269 127.0.0.1:5269
 __TORRC__
 
-echo "Checking Tor status."
+echo "Checking Tor status"
 
 systemctl status tor
 
-echo "Enabling Tor to be started on bootup."
+echo "Enabling Tor to be started on bootup"
 
 systemctl enable tor
 
@@ -42,13 +40,17 @@ echo "Starting Tor."
 
 systemctl start tor
 
-echo "Checking Tor status."
+echo "Checking Tor status"
 
 systemctl status tor
 
-echo "Retreivinig Hidden Service Address."
+echo "Starting Tor."
 
-echo "!!! THIS IS IMPORTANT !!!"
+systemctl restart tor
+
+echo "Retreivinig Hidden Service Address"
+
+echo "!!!!! IMPORTANT !!!!!!"
 
 echo "**********************"
 
@@ -56,6 +58,10 @@ cat /var/lib/tor/hidden_service/hostname
 
 echo "**********************"
 
-echo "!!! THIS IS IMPORTANT !!!"
+echo "!!!!! IMPORTANT !!!!!!"
 
-echo "Please record this (dot) onion address."
+echo "Record Hidden Service Address"
+
+echo " "
+
+echo "Please record the Tor hidden service address above"
