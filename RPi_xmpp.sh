@@ -269,7 +269,8 @@ systemctl status prosody
 
 passwd
 
-echo "PLEASE NOTE: You need make a secure record of the following details for future reference. DO IT NOW!"
-echo "Hostname: $(cat /var/lib/tor/hidden_service/hostname)"
-echo "Admin Account: root@$(cat /var/lib/tor/hidden_service/hostname)"
+cat > ~/.bashrc << __BASHRC__
+alias host='~/ab-master/RPi_host.sh'
+__BASHRC__
+
 echo "Congratulations! When you're ready, restart the system by running 'reboot'"
