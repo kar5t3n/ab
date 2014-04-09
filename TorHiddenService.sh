@@ -34,7 +34,7 @@ echo "Checking Tor status."
 
 systemctl status tor
 
-echo "Enable Tor to be started on bootup."
+echo "Enabling Tor to be started on bootup."
 
 systemctl enable tor
 
