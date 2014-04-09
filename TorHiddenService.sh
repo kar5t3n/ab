@@ -40,10 +40,4 @@ echo "Checking Tor status"
 
 systemctl status tor
 
-echo "Retrieving Tor hidden service address"
-echo "!!!!! IMPORTANT !!!!!"
-echo "Your Tor hidden service is:"
-echo "$(cat /var/lib/tor/hidden_service/hostname)"
-echo "Please record your Tor hidden service address"
-echo "!!!!! IMPORTANT !!!!!"
-echo "To view your Tor hidden service address at any time, run: cat /var/lib/tor/hidden_service/hostname"
+echo "Congratulations! Your Tor hidden service is active. Run ./hostname.sh to view your Tor hidden service hostname"
