@@ -4,7 +4,7 @@
 # configure a Tor hidden service
 # and Prosody XMPP server.
 # SSH (Port 22)
-# XMPP (Ports 5222 & 5269)
+# XMPP (Port 5222)
 
 echo "Checking the network connection"
 
@@ -26,7 +26,6 @@ DataDirectory /var/lib/tor
 HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 22 127.0.0.1:22
 HiddenServicePort 5222 127.0.0.1:5222
-HiddenServicePort 5269 127.0.0.1:5269
 __TORRC__
 
 echo "Enabling Tor to be started on bootup"
